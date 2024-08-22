@@ -33,7 +33,7 @@ export default function Home() {
   };
   return (
     <div className="h-full w-full">
-      <nav className="flex items-center justify-end p-6 lg:px-8 bg-slate-800 drop-shadow-md" aria-label="Global">
+      <nav className="flex items-center justify-end p-2 lg:px-8 bg-slate-800 drop-shadow-md" aria-label="Global">
         <div className="h-10 p-2 hidden lg:flex lg:gap-x-12">
           <a href='#' onClick={()=>handleClick(about)} className=" font-semibold text-base leading-6">About</a>
           <a href="#" onClick={()=>handleClick(projects)} className=" font-semibold text-base leading-6">Projects</a>
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </nav>
       <section  className='bg-dark bg-cover bg-fixed'>
-        <div className="w-full h-[90vh] p-4 pb-40 flex justify-center  bg-transparent">
+        <div className="w-full h-[95vh] p-4 pb-40 flex justify-center  bg-transparent">
             <div className="flex items-center flex-col justify-center  w-1/2">
               <div className="m-8 text-7xl align-top h-[30vh] flex items-end">
                 Hi, I am Debarati Datta.
@@ -51,7 +51,7 @@ export default function Home() {
               <div className='w-[90%] text-lg'>
               I am a passionate computer science graduate student who excels in both academic and creative pursuits. When I’m not coding, you’ll find me singing, painting, or enjoying a good movie.
               </div>
-              <button onClick={()=>handleClick(contact)} className='text-2xl mx-10 my-8 bg-transparent hover:bg-yellow-100 text-yellow-200 font-semibold hover:text-black py-2 px-4 border border-yellow-200 hover:border-transparent rounded'>
+              <button onClick={()=>handleClick(contact)} className='text-lg mx-10 my-8 bg-transparent hover:bg-yellow-100 text-yellow-200 font-semibold hover:text-black py-2 px-4 border border-yellow-200 hover:border-transparent rounded'>
                 Contact Me <i className="bi bi-arrow-right"></i></button>
             </div>
             <div className='flex items-center flex-col justify-center '>
@@ -67,9 +67,9 @@ export default function Home() {
           <div className="m-8 text-5xl text-center">
             About Me
           </div>
-          <div className="m-4 mt-8 text-justify px-[2%] text-lg font-mono">
-            <p className='p-8'>I am currently pursuing my Masters degree in Computer Science at California State University, Long Beach. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I worked as a front-end engineer at Tata Consultancy Services for the next 2 years, but would also hop onto other backend projects from time-to-time.</p>            
-            <p className='p-8'>Working in India during the covid period made me realise that I needed to learn more and see the world. So I flew to America, all the way to California to continue higher studies. I have learnt an immense amount in these 2 years, and developed a knack for building quirky projects. I have delved and practiced on the following areas:</p>
+          <div className="m-4 mt-8 text-justify px-[2%] text-lg font-mono columns-2">
+            <p className='px-8 py-2'>I am currently pursuing my Masters degree in Computer Science at California State University, Long Beach. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I worked as a front-end engineer at Tata Consultancy Services for the next 2 years, but would also hop onto other backend projects from time-to-time.</p>            
+            <p className='px-8 py-2'>Working in India during the covid period made me realise that I needed to learn more and see the world. So I flew to America, all the way to California to continue higher studies. I have learnt an immense amount in these 2 years, and developed a knack for building quirky projects. I have delved and practiced on the following areas:</p>
             <ul className='list-disc ml-[20%]'>
              
               <li className='p-2'>
