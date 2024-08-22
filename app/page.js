@@ -87,7 +87,7 @@ export default function Home() {
               <li className='p-2'>Web Development</li>
               <li className='p-2'>Large Language Models</li>
             </ul>
-          <p className='p-8'>While these are my current topics of interest, I incesstantly try to explore new areas and languages. Apart from coding, I'm also a trained classical vocalist. On-campus I work as a tutor of mathematics (specially calculus since I find it easy) to undergraduate students at the College of Natural Science and Mathematics, where I would have gone had not computers entered my life. I also worked as a research assistant in artificial intelligence where my work was primarily focused on training multimodal data on Large Language models.</p>
+          <p className='p-8'>While these are my current topics of interest, I incesstantly try to explore new areas and languages. Apart from coding, I	&apos;m also a trained classical vocalist. On-campus I work as a tutor of mathematics (specially calculus since I find it easy) to undergraduate students at the College of Natural Science and Mathematics, where I would have gone had not computers entered my life. I also worked as a research assistant in artificial intelligence where my work was primarily focused on training multimodal data on Large Language models.</p>
           </div>
           <div className="m-12 px-4">
             <ul className="text-2xl list flex items-center justify-evenly">
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">StoryTailor <a href="https://github.com/DebaratiD/GoogleHackathon/tree/main/frontend" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg text-base m-[2%]">
+                <p className="text-white font-mono text-lg m-[2%]">
                   As part of my submission to Google AI Hackathon 2024, I created an app using NextJS that converts news into a form that is child friendly using the help of GeminiAI.
                 </p>
               </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">Monet Video Generator <a href="https://github.com/DebaratiD/MonetVideoGenerator" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg text-base m-[2%]">
+                <p className="text-white font-mono text-lg m-[2%]">
                 This python program converts the background of a video around a selected object to resemble a Monet painting using LangSAM and Instruct-Pix2pix engines. Submitted towards my final machine vision project.
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">AI Image Generating App <a href="https://github.com/DebaratiD/OpenAIMernApp" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg text-base m-[2%]">
+                <p className="text-white font-mono text-lg  m-[2%]">
                 Worked on an existing project from youtube that generates images from text prompt using OpenAI and used Gin in the backend to improve API call rates. The app uses Cloudinary for storage and MongoDB to handle the retrieved data.</p>
               </div>
         </div>
@@ -203,7 +203,7 @@ export default function Home() {
       <section id='contact' ref={contact} className='bg-stars bg-fixed bg-cover p-20' >
         
       <div className=" shadow-glow rounded-lg pt-[5%] glassbox-dark p-10">
-              <p className="text-center text-5xl">Let's talk!</p>
+              <p className="text-center text-5xl">Let	&apos;s talk!</p>
         <div className=' flex justify-center items-center '>
            <div className='flex flex-col justify-center p-10 m-5'>
             <div className='text-[80px] flex justify-center'>
