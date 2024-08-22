@@ -35,10 +35,10 @@ export default function Home() {
     <div className="h-full w-full">
       <nav className="flex items-center justify-end p-6 lg:px-8 bg-slate-800 drop-shadow-md" aria-label="Global">
         <div className="h-10 p-2 hidden lg:flex lg:gap-x-12">
-          <a href='#' onClick={()=>handleClick(about)} className=" font-semibold text-xl leading-6">About</a>
-          <a href="#" onClick={()=>handleClick(projects)} className=" font-semibold text-xl leading-6">Projects</a>
-          <Link href="/pdfviewer" className=" font-semibold text-xl leading-6">Resume</Link>
-          <a href="#" onClick={()=>handleClick(contact)} className=" font-semibold text-xl leading-6">Contact Me</a>
+          <a href='#' onClick={()=>handleClick(about)} className=" font-semibold text-base leading-6">About</a>
+          <a href="#" onClick={()=>handleClick(projects)} className=" font-semibold text-base leading-6">Projects</a>
+          <Link href="/pdfviewer" className=" font-semibold text-base leading-6">Resume</Link>
+          <a href="#" onClick={()=>handleClick(contact)} className=" font-semibold text-base leading-6">Contact Me</a>
           
         </div>
       </nav>
@@ -48,7 +48,7 @@ export default function Home() {
               <div className="m-8 text-7xl align-top h-[30vh] flex items-end">
                 Hi, I am Debarati Datta.
               </div>
-              <div className='w-[90%] text-xl'>
+              <div className='w-[90%] text-lg'>
               I am a passionate computer science graduate student who excels in both academic and creative pursuits. When I’m not coding, you’ll find me singing, painting, or enjoying a good movie.
               </div>
               <button onClick={()=>handleClick(contact)} className='text-2xl mx-10 my-8 bg-transparent hover:bg-yellow-100 text-yellow-200 font-semibold hover:text-black py-2 px-4 border border-yellow-200 hover:border-transparent rounded'>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="m-8 text-5xl text-center">
             About Me
           </div>
-          <div className="m-4 mt-8 text-justify px-[2%] text-xl font-mono">
+          <div className="m-4 mt-8 text-justify px-[2%] text-lg font-mono">
             <p className='p-8'>I am currently pursuing my Masters degree in Computer Science at California State University, Long Beach. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I worked as a front-end engineer at Tata Consultancy Services for the next 2 years, but would also hop onto other backend projects from time-to-time.</p>            
             <p className='p-8'>Working in India during the covid period made me realise that I needed to learn more and see the world. So I flew to America, all the way to California to continue higher studies. I have learnt an immense amount in these 2 years, and developed a knack for building quirky projects. I have delved and practiced on the following areas:</p>
             <ul className='list-disc ml-[20%]'>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">StoryTailor <a href="https://github.com/DebaratiD/GoogleHackathon/tree/main/frontend" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg m-[2%]">
+                <p className="text-white font-mono text-base m-[2%]">
                   As part of my submission to Google AI Hackathon 2024, I created an app using NextJS that converts news into a form that is child friendly using the help of GeminiAI.
                 </p>
               </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">Monet Video Generator <a href="https://github.com/DebaratiD/MonetVideoGenerator" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg m-[2%]">
+                <p className="text-white font-mono text-base m-[2%]">
                 This python program converts the background of a video around a selected object to resemble a Monet painting using LangSAM and Instruct-Pix2pix engines. Submitted towards my final machine vision project.
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 <div className="font-bold text-3xl mb-2 m-[2%] text-white">AI Image Generating App <a href="https://github.com/DebaratiD/OpenAIMernApp" target="_blank">
                 <i className="bi bi-arrow-up-right-circle"></i></a>
                 </div>
-                <p className="text-white font-mono text-lg  m-[2%]">
+                <p className="text-white font-mono text-base  m-[2%]">
                 Worked on an existing project from youtube that generates images from text prompt using OpenAI and used Gin in the backend to improve API call rates. The app uses Cloudinary for storage and MongoDB to handle the retrieved data.</p>
               </div>
         </div>
