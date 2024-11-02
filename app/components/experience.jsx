@@ -34,7 +34,7 @@ export default function Experience() {
                 <div className="px-3 py-4 text-right max-md:border-0 border-r-2 border-line">
                 <div className="font-bold text-3xl mb-2 max-md:flex max-md:justify-end text-heading">
                   <p className='max-md:hidden'>California State University</p>
-                  <motion.img src='./CSULB-logo.png' className='md:hidden h-min p-3 items-end' alt="Cal State Long Beach" width={300} />
+                  <motion.img src='./CSULB-logo.png' className='md:hidden max-h-max p-3 items-end' alt="Cal State Long Beach" width={300} />
                   </div>
                   <motion.ul>
                     <motion.li>
@@ -68,7 +68,7 @@ export default function Experience() {
                 <div className="px-3 py-4 text-right max-md:border-0 border-r-2 border-line">
                   <div className="font-bold text-3xl mb-2 max-md:flex max-md:justify-end text-heading"> 
                     <p className='max-md:hidden'>Tata Consultancy Services</p>
-                    <motion.img src={logotcs} className='md:hidden h-min p-3 items-end' alt="StoryTailor application" width={300} />
+                    <motion.img src={logotcs} className='md:hidden max-h-max p-3 items-end' alt="StoryTailor application" width={300} />
                   </div>
                   <motion.ul>
                     <motion.li>

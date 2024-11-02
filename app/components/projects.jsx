@@ -67,7 +67,7 @@ export default function Projects() {
           viewport={{once:true, amount:0.15}}
           variants={item} 
           className="max-md:block max-md:m-2 flex rounded overflow-hidden shadow-glow m-3 p-3 border-cyan-300">
-                <motion.img src='/monet.png' className='h-min max-md:pl-2 pl-6 m-auto' alt="Monet Video Generator" width={300} whileHover={{scale:1.2}}/>
+                <motion.img src='./monet.png' className='h-min max-md:pl-2 pl-6 m-auto' alt="Monet Video Generator" width={300} whileHover={{scale:1.2}}/>
                 <div className="px-3 py-4">
                   <div className="font-bold text-3xl mb-2 m-[2%] text-white">Monet Video Generator <a href="https://github.com/DebaratiD/MonetVideoGenerator" target="_blank">
                   <i className="bi bi-arrow-up-right-circle"></i></a>
@@ -85,7 +85,7 @@ export default function Projects() {
           viewport={{once:true, amount:0.15}}
           initial="hidden"
           variants={item}>
-                <motion.img src='/muse/m1.png' className='h-min max-md:pl-2 pl-6 m-auto'  alt="AI Image Generating App" width={300} whileHover={{scale:1.2}}/>
+                <motion.img src='./muse/m1.png' className='h-min max-md:pl-2 pl-6 m-auto'  alt="AI Image Generating App" width={300} whileHover={{scale:1.2}}/>
                 <div className="px-3 py-4">
                   <div className="font-bold text-3xl mb-2 m-[2%] text-white">AI Image Generating App <a href="https://github.com/DebaratiD/OpenAIMernApp" target="_blank">
                   <i className="bi bi-arrow-up-right-circle"></i></a>
