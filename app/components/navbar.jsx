@@ -46,29 +46,29 @@ export default function Navbar() {
                     <motion.a href="#experience"  className="menu-item" whileHover={{scale:1.1}}>
                         <span>Experience</span>
                     </motion.a>
-                    <Link href="/pdfviewer" className="menu-item hover:scale-110" >
-                        <span>Resume</span>
-                    </Link>
+                    <motion.a className="menu-item" target='_blank'  whileHover={{scale:1.1}}
+                    href="https://drive.google.com/file/d/1KlJVSv7hbh3f5wznFhSrnxa5kbpbhbPa/view?usp=sharing"  rel="noopener noreferrer">
+                    <span>Resume</span>
+                    </motion.a>
                 </div>
-                <motion.span className="md:hidden menu-item" onClick={showMenuAll}
-                 whileTap={{ rotate: 180, scale:0.3 }}
-                 transition={{
-                   type: "tween",
-                   stiffness: 100,
-                   damping: 20
-                 }}
-                ><MenuSelectIcon className="md:hidden p-1" clicked={showItems}/></motion.span>
+                <div className='md:hidden menu-item'>
+                    <motion.span 
+                        onClick={showMenuAll}
+                        className="active:animate-spin transition ease-in duration-200"
+                        >
+                        <MenuSelectIcon className="md:hidden p-1" clicked={showItems}/>
+                    </motion.span>
+                </div>
+                
             </div>
             
             {showItems && 
-            <motion.div className=" p-2 bg-accent"
+            <motion.div className="mt-[-10px] p-2 bg-accent"
             variants={list}
             initial="hidden"
             animate="visible"
             exit="hidden"
-            ><Link href="/pdfviewer" className="menu-item" onClick={showMenuAll}>
-                <i className="bi bi-file-earmark-font"></i><span>Resume</span>
-            </Link>
+            >
             <motion.a href='#about' 
             variants={item} className="menu-item" onClick={showMenuAll}>
                 <i className="bi bi-file-person"></i><span>About</span>
@@ -78,6 +78,10 @@ export default function Navbar() {
             </motion.a>
             <motion.a href="#projects" variants={item} className="menu-item" onClick={showMenuAll}>
                 <i className="bi bi-code-square"></i><span>Experience</span>
+            </motion.a>
+            <motion.a className="menu-item" target='_blank' variants={item} onClick={showMenuAll}
+                    href="https://drive.google.com/file/d/1KlJVSv7hbh3f5wznFhSrnxa5kbpbhbPa/view?usp=sharing"  rel="noopener noreferrer">
+            <i className="bi bi-file-earmark-font"></i><span>Resume</span>
             </motion.a>
             
             <div className='flex h-min p-10'>

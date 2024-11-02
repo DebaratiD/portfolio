@@ -44,14 +44,15 @@ export default function About() {
         <motion.div>
         <p className='max-md:px-2 px-8 py-2 text-lg text-paragraph text-justify font-sans'>I am currently pursuing my Masters degree in Computer Science at California State University, Long Beach. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I worked as a front-end engineer at Tata Consultancy Services for the next 2 years, but would also hop onto other backend projects from time-to-time. I incesstantly try to explore new areas and languages. Apart from coding, I	&apos;m also a trained classical vocalist.</p>       
         </motion.div>
-        <motion.div className='max-md:justify-center text-paragraph flex flex-wrap px-8 py-2 justify-between'
-        variants={item}
+        <motion.ul className='max-md:justify-center text-paragraph flex flex-wrap max-md:px-4 px-8 py-2 justify-between'
+        variants={variants}
         initial="hidden"
         viewport={{once:true}}
         whileInView="visible"
         >
-          {skills.map((val, index)=>(<SkillCard key={val.name} index={index} {...val}/>))}
-        </motion.div>
+          {skills.map((val, index)=>(<motion.li variants={item} key={index} className='max-md:px-2 max-md:m-3 max-md:w-10/12'>
+            <SkillCard key={val.name} index={index} {...val}/></motion.li>))}
+        </motion.ul>
       </motion.div>
       
     </SectionWrapper>
@@ -60,7 +61,7 @@ export default function About() {
 
 const SkillCard = ({name, skills})=>{
   return(
-    <Card className='about-card max-md:px-2 max-md:m-3 max-md:w-3/4'>
+    <Card className='about-card'>
       <CardHeader className='pb-2 px-5'>
         <p>{name}</p>
       </CardHeader>

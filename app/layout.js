@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel='icon' type='image/png' href='./favicon.png' />
+      <link rel='icon' type='image/png' sizes="180x180" href='./favicon.png' />
       </head>
       <body className={inter.className}>
       <Navbar />

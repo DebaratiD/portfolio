@@ -1,15 +1,27 @@
 'use client'
-import { Worker } from '@react-pdf-viewer/core';
-import { Viewer } from "@react-pdf-viewer/core";
-import '@react-pdf-viewer/core/lib/styles/index.css';
+import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 
-export default function PdfViewer() {
+const Worker = dynamic(() => import('@react-pdf-viewer/core').then(mod => mod.Worker), { ssr: false });
+const Viewer = dynamic(() => import('@react-pdf-viewer/core').then(mod => mod.Viewer), { ssr: false });
+
+const PdfViewer = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
-    <div>
-      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+    <div className='h-fit w-[80vw]'>
+      {isClient && (
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
           <Viewer fileUrl="Resume.pdf" />
-      </Worker>
-        
+        </Worker>
+      )}
     </div>
-  )
-}
+  );
+};
+
+export default PdfViewer;
+
