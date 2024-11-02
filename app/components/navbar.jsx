@@ -47,7 +47,7 @@ export default function Navbar() {
                         <span>Experience</span>
                     </motion.a>
                     <motion.a className="menu-item" target='_blank'  whileHover={{scale:1.1}}
-                    href="https://drive.google.com/file/d/1KlJVSv7hbh3f5wznFhSrnxa5kbpbhbPa/view?usp=sharing"  rel="noopener noreferrer">
+                    href="https://drive.google.com/file/d/1pziXnCkrWE8M3MsecyWMhSIFXacj1isB/view?usp=sharing"  rel="noopener noreferrer">
                     <span>Resume</span>
                     </motion.a>
                 </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
                 <i className="bi bi-code-square"></i><span>Experience</span>
             </motion.a>
             <motion.a className="menu-item" target='_blank' variants={item} onClick={showMenuAll}
-                    href="https://drive.google.com/file/d/1KlJVSv7hbh3f5wznFhSrnxa5kbpbhbPa/view?usp=sharing"  rel="noopener noreferrer">
+                    href="https://drive.google.com/file/d/1pziXnCkrWE8M3MsecyWMhSIFXacj1isB/view?usp=sharing"  rel="noopener noreferrer">
             <i className="bi bi-file-earmark-font"></i><span>Resume</span>
             </motion.a>
             
