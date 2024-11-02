@@ -55,7 +55,7 @@ export default function Home() {
         }}
         
         >
-          <Image src="/picMe3.png" alt='My image' width={300} height={600} className='rounded-full border-pink-100 border-2'/>
+          <Image src="./picMe3.png" alt='My image' width={300} height={600} className='rounded-full border-pink-100 border-2'/>
         </motion.div>
       
 
