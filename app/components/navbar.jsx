@@ -31,7 +31,7 @@ export default function Navbar() {
     <>
         <nav className="fixed grid w-[98%] bg-transparent drop-shadow-md" aria-label="Global">
             <div className='flex justify-between '>
-                <Image src="/debaratiDatta.png" alt='Debarati Datta' height={25} width={130} 
+                <Image src="./debaratiDatta.png" alt='Debarati Datta' height={25} width={130} 
                 className='px-4 py-5 h-max w-min cursor-pointer'
                 onClick={() => {
                     window.open('https://portfolio-qvc4nwxtt-debarati-dattas-projects.vercel.app')

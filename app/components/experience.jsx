@@ -3,7 +3,7 @@ import SectionWrapper from './sectionWrapper';
 import { motion } from 'framer-motion';
 
 export default function Experience() {
-  const logotcs = `/logo-rgb-white.png`;
+  const logotcs = `./logo-rgb-white.png`;
   const variants = {
     visible: { 
       opacity: 1, 
@@ -34,7 +34,7 @@ export default function Experience() {
                 <div className="px-3 py-4 text-right max-md:border-0 border-r-2 border-line">
                 <div className="font-bold text-3xl mb-2 max-md:flex max-md:justify-end text-heading">
                   <p className='max-md:hidden'>California State University</p>
-                  <motion.img src='/CSULB-logo.png' className='md:hidden h-min p-3 items-end' alt="Cal State Long Beach" width={300} />
+                  <motion.img src='./CSULB-logo.png' className='md:hidden h-min p-3 items-end' alt="Cal State Long Beach" width={300} />
                   </div>
                   <motion.ul>
                     <motion.li>
@@ -58,7 +58,7 @@ export default function Experience() {
                     </motion.li>
                   </motion.ul>
                 </div>
-                <motion.img src='/CSULB-logo.png' className='max-md:hidden h-min pl-6 m-auto' alt="StoryTailor application" width={300} />
+                <motion.img src='./CSULB-logo.png' className='max-md:hidden h-min pl-6 m-auto' alt="StoryTailor application" width={300} />
                 
           </motion.div>
          
