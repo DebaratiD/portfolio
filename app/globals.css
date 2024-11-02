@@ -3,37 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-color: #000000;
-  --background-start-color: #ef3d59;
-  --background-end-color: #4ab19d;
-  --yellow: #efc958;
-  --red: #ef3d59;
-  --orange: #e17a47;
-  --green: #4ab19d;
-  --blue: #344e5c;
-  --blue-glow: #80ffff;
-  --pink-glow: #ff80bf;
-  --yellow-glow: #ffff80;
+  --text-heading: #000000;
+  --text-paragraph: #000000;
+  --text-btn: #ffffff;
+  --background-primary: #ffffff;
+  --background-secondary: #f2f8f8;
+  --background-accent: #11dd11;
+  --background-card: #11dd11;
+  --color-lines: #766895;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-color: #ffffff;
-    --background-start-color: #000000;
-    --background-end-color: #e17a47;
-    
-  --red: #ef3d59;
-  --orange: #e17a47;
-  --green: #4ab19d;
-  --blue: #344e5c;
-  --blue-glow: #80ffff;
-  --pink-glow: #ff80bf;
-  --yellow-glow: #ffff80;
+    --text-heading: #feabc4;
+    --text-paragraph: #ffffff;
+  --text-btn: #000000;
+  --background-primary: #ea1a7f;
+  --background-secondary: #f97da8;
+  --background-accent: #0a0146;
+  --background-card: #281b59;
+  --color-lines:#766895;
   }
 }
 
 body {
-  color: var(--foreground-color);
+  color: var(--background-text);
+  background-color: var(--background-accent);
+  @apply h-screen w-full;
 }
 
 @layer utilities {
@@ -51,8 +48,20 @@ body {
   @apply bg-blue-700;
 }
 .shadow-glow{
-    box-shadow: inset 0 0 20px #fff, inset -5px 0 30px #0ff,
-    0 0 30px #fff;
+    box-shadow: inset 0 0 3px #fff, inset -3px 0 72px #fc95b6,
+    0 0 3px #fff;
+}
+.menu-item{
+  @apply font-sans text-xl px-2 py-5 leading-6 block text-heading;
+}
+.menu-item>i{
+  @apply pr-3;
+}
+.menu-tooltip{
+ @apply scale-0 absolute;
+}
+.menu-item:hover .menu-tooltip{
+  @apply scale-100 ease-in duration-200;
 }
 
 .glow-ruler{
@@ -82,4 +91,38 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(31, 35, 50, 0.3);
+}
+
+.section-wrapper{
+  @apply w-full min-h-screen pl-[5%] pt-[8%] pb-[8%] pr-[10%] mb-[2%] ;
+}
+.section-content{
+  @apply w-full h-full flex justify-center items-center  max-md:mt-[10%];
+}
+
+.about-card{
+  //background: linear-gradient(45deg, #1717cf, #2B2BFF, #ab57ff);
+  @apply py-4 bg-cardbg text-paragraph text-base rounded-lg drop-shadow-md min-w-40 shadow-slate-600;
+}
+.divider{
+  border: 1px solid;
+}
+.button{
+  background-color:var(--background-primary);
+  color: var(--text-btn);
+  @apply rounded-lg p-3 m-2;
+}
+.company{
+  @apply font-bold text-2xl text-primary font-sans pt-5 pb-3;
+}
+.duration{
+ @apply font-sans text-heading py-2;
+}
+.company-desc{
+  @apply font-serif text-paragraph text-xl py-3 pl-3 list-outside list-disc text-justify;
+}
+.dividercontact{
+  border: 1px solid var(--color-lines);
+  width: 1px;
+  margin: auto;
 }
