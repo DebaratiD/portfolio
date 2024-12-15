@@ -42,7 +42,7 @@ export default function About() {
           About Me
         </div>
         <motion.div>
-        <p className='max-md:px-2 px-8 py-2 text-lg text-paragraph text-justify font-sans'>I am currently pursuing my Masters degree in Computer Science at California State University, Long Beach. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I worked as a front-end engineer at Tata Consultancy Services for the next 2 years, but would also hop onto other backend projects from time-to-time. I incesstantly try to explore new areas and languages. Apart from coding, I	&apos;m also a trained classical vocalist.</p>       
+        <p className='max-md:px-2 px-8 py-2 text-lg text-paragraph text-justify font-sans'>I pursued my Masters degree in Computer Science at California State University, Long Beach until December 2024. I started coding in grade 11 after discovering my love for math. Coding was simple, fun and exciting so I pursued a Bachelors degree in Computer Science and Engineering from SRM Institute of Science and Technology in Chennai India. I first worked as a JavaScript developer at Apex Technologies, and then bagged a full-time position as a front-end engineer at Tata Consultancy Services for the next 2 years. I constantly try to explore new areas and languages. Apart from coding, I am also a trained classical vocalist.</p>       
         </motion.div>
         <motion.ul className='max-md:justify-center text-paragraph flex flex-wrap max-md:px-4 px-8 py-2 justify-between'
         variants={variants}
