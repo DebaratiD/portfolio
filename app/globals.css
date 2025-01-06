@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --text-heading: #000000;
-  --text-paragraph: #000000;
-  --text-btn: #ffffff;
-  --background-primary: #ffffff;
-  --background-secondary: #f2f8f8;
-  --background-accent: #11dd11;
-  --background-card: #11dd11;
-  --color-lines: #766895;
+  --text-heading: #45393B;
+  --text-paragraph: #6E5D60;
+  --text-btn: #000000;
+  --background-primary: #000000;
+  --background-secondary: #6E5D60;
+  --background-accent: #F7F4D3;
+  --background-card: #FAD3A7;
+  --color-lines: #112A46;
 
 }
 
@@ -113,7 +113,7 @@ border: 1px solid rgba(31, 35, 50, 0.3);
   @apply rounded-lg p-3 m-2;
 }
 .company{
-  @apply font-bold text-2xl text-primary font-sans pt-5 pb-3;
+  @apply font-bold text-2xl text-heading font-sans pt-5 pb-3;
 }
 .duration{
  @apply font-sans text-heading py-2;
