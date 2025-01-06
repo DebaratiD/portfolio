@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionWrapper from './sectionWrapper';
 import { motion } from 'framer-motion';
-import { staggerContainer } from '../utils/motion';
 
 
 export default function Projects() {
@@ -41,7 +40,7 @@ export default function Projects() {
                 Projects
         </motion.div>
         
-          <motion.div className="max-md:block max-md:m-2 flex rounded overflow-hidden dark:shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300"
+          <motion.div className="max-md:block max-md:m-2 flex rounded overflow-hidden shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300"
           whileInView="visible"
           initial="hidden"
           viewport={{once:true, amount:0.15}}
@@ -66,7 +65,7 @@ export default function Projects() {
           initial="hidden"
           viewport={{once:true, amount:0.15}}
           variants={item} 
-          className="max-md:block max-md:m-2 flex rounded overflow-hidden dark:shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300">
+          className="max-md:block max-md:m-2 flex rounded overflow-hidden shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300">
                 <motion.img src='./monet.png' className='max-h-max max-md:pl-2 pl-6 m-auto' alt="Monet Video Generator" width={300} whileHover={{scale:1.2}}/>
                 <div className="px-3 py-4">
                   <div className="font-bold text-3xl mb-2 m-[2%] text-heading">Monet Video Generator <a href="https://github.com/DebaratiD/MonetVideoGenerator" target="_blank">
@@ -80,7 +79,7 @@ export default function Projects() {
           </motion.div>
 
 
-          <motion.div className="max-md:block max-md:m-2 flex rounded overflow-hidden dark:shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300"
+          <motion.div className="max-md:block max-md:m-2 flex rounded overflow-hidden shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300"
           whileInView="visible"
           viewport={{once:true, amount:0.15}}
           initial="hidden"
