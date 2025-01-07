@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "selector",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,10 +23,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "dark":"url('/dark1.jpg')",
         "stars":"url('/stars.jpg')",
-        animation: {
-          spinslow: 'spin 1.5s linear 1',
-                  }
       },
+      animation: {
+        spinslow: 'spin 1.5s linear 1',
+                }
     },
   },
   plugins: [],

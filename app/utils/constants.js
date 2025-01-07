@@ -6,10 +6,11 @@ export const skills=[
             'TypeScript',
             'HTML',
             'CSS',
-            'ReactJS',
-            'AngularJS',
-            'NextJS',
-            'TailwindCSS',
+            'React.js',
+            'Angular.js',
+            'Next.js',
+            'Tailwind CSS',
+            'Chakra UI'
         ],
     },
     {

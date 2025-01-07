@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.light {
   --text-heading: #45393B;
   --text-paragraph: #6E5D60;
   --text-btn: #000000;
@@ -13,19 +13,17 @@
   --color-lines: #112A46;
 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-heading: #feabc4;
-    --text-paragraph: #ffffff;
-  --text-btn: #000000;
-  --background-primary: #ea1a7f;
-  --background-secondary: #f97da8;
-  --background-accent: #0a0146;
-  --background-card: #281b59;
-  --color-lines:#766895;
-  }
+.dark {
+  --text-heading: #feabc4;
+  --text-paragraph: #ffffff;
+--text-btn: #000000;
+--background-primary: #ea1a7f;
+--background-secondary: #f97da8;
+--background-accent: #0a0146;
+--background-card: #281b59;
+--color-lines:#766895;
 }
+
 
 body {
   color: var(--background-text);

@@ -1,9 +1,11 @@
 import React from 'react';
 import SectionWrapper from './sectionWrapper';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 
 export default function Experience() {
-  const logotcs = `./logo-rgb-white.png`;
+  const { resolvedTheme, setTheme } = useTheme();
+  const logotcs = resolvedTheme=='dark'?`./logo-rgb-white.png`:`./logo-rgb-black.png`;
   const variants = {
     visible: { 
       opacity: 1, 

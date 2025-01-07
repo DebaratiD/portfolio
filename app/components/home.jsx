@@ -20,6 +20,9 @@ export default function Home() {
       },
     },
   };
+
+  //console.log(window.matchMedia());
+
   return (
     // <div className="w-full h-[95vh] p-4 pb-40 flex justify-center">
     //     <div className="flex items-center flex-col justify-center  w-1/2">
@@ -55,7 +58,7 @@ export default function Home() {
         }}
         
         >
-          <Image src="./picMe3.png" alt='My image' width={300} height={600} className='rounded-full border-pink-100 border-2'/>
+          <Image src="./picMe3.png" alt='My image' width={300} height={600} className='rounded-full border-slate-800 dark:border-pink-100 border-2'/>
         </motion.div>
       
 
@@ -70,7 +73,7 @@ export default function Home() {
           className="text-heading text-7xl py-2 ">
             Hi! I am Debarati Datta.
           </motion.div>
-          <motion.div className='text-lg text-paragraph py-2 max-w-4xl' 
+          <motion.div className='text-lg text-paragraph py-2 max-w-3xl' 
           variants={variants}>
             I am a passionate computer science graduate student who excels in both academic and creative pursuits. When I’m not coding, you’ll find me singing, painting, or enjoying a good movie.
           </motion.div>

@@ -4,9 +4,14 @@ import Link from 'next/link';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import { Divider } from '@nextui-org/react';
+import { useTheme } from 'next-themes';
 
 export default function Navbar() {
     const [showItems, setShowItems] = useState(false);
+    const [mounted, setMounted] = useState(false);
+    const {resolvedTheme, setTheme} = useTheme();
+
+    useEffect(() => setMounted(true));
 
     const showMenuAll=()=>{
         setShowItems(!showItems);
@@ -36,28 +41,41 @@ export default function Navbar() {
                 onClick={() => {
                     window.open('https://portfolio-qvc4nwxtt-debarati-dattas-projects.vercel.app')
                   }}/>
-                <div className="md:flex max-md:hidden">
-                    <motion.a href='#about'  className="menu-item" whileHover={{scale:1.1}} >
-                        <span>About</span>
-                    </motion.a>  
-                    <motion.a href="#projects"  className="menu-item" whileHover={{scale:1.1}}>
-                        <span>Projects</span>
-                    </motion.a>
-                    <motion.a href="#experience"  className="menu-item" whileHover={{scale:1.1}}>
-                        <span>Experience</span>
-                    </motion.a>
-                    <motion.a className="menu-item" target='_blank'  whileHover={{scale:1.1}}
-                    href="https://drive.google.com/file/d/1G5Xe0o9yeaQ-bgG9y9Eulw6F2xI_EpWq/view?usp=sharing"  rel="noopener noreferrer">
-                    <span>Resume</span>
-                    </motion.a>
-                </div>
-                <div className='md:hidden menu-item'>
-                    <motion.span 
-                        onClick={showMenuAll}
-                        className="active:animate-spin transition ease-in duration-200"
+                <div className='flex justify-between '>
+                   <div className="md:flex max-md:hidden">
+                        <motion.a href='#about'  className="menu-item" whileHover={{scale:1.1}} >
+                            <span>About</span>
+                        </motion.a>  
+                        <motion.a href="#projects"  className="menu-item" whileHover={{scale:1.1}}>
+                            <span>Projects</span>
+                        </motion.a>
+                        <motion.a href="#experience"  className="menu-item" whileHover={{scale:1.1}}>
+                            <span>Experience</span>
+                        </motion.a>
+                        <motion.a className="menu-item" target='_blank'  whileHover={{scale:1.1}}
+                        href="https://drive.google.com/file/d/1G5Xe0o9yeaQ-bgG9y9Eulw6F2xI_EpWq/view?usp=sharing"  rel="noopener noreferrer">
+                        <span>Resume</span>
+                        </motion.a>
+                    </div>
+                    <div className="menu-item ">
+                    <motion.span className="active:animate-spin transition ease-linear duration-200" 
+                        onClick={() =>
+                            setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                            }       
+                            whileHover={{scale:1.1}}                 
                         >
-                        <MenuSelectIcon className="md:hidden p-1" clicked={showItems}/>
-                    </motion.span>
+                            <ThemeIcon theme={resolvedTheme} />
+                        </motion.span>
+                    </div>
+                    <div className='md:hidden menu-item'>
+                        <motion.span 
+                            onClick={showMenuAll}
+                            className="active:animate-spin transition ease-in duration-200"
+                            >
+                            <MenuSelectIcon className="md:hidden p-1" clicked={showItems}/>
+                        </motion.span>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -110,4 +128,11 @@ const MenuSelectIcon = ({clicked}) =>{
     return(
        <i className='bi bi-list'></i>
     );
+}
+
+const ThemeIcon = ({theme, classes})=>{
+    if(theme=="dark")
+        return <span className="transition hover:animate-spin duration-700 ease-linear cursor-pointer"><i className="bi bi-brightness-high"></i></span>;
+
+    else return <span className='transition active:animate-spin duration-700 ease-linear cursor-pointer'><i className="bi bi-moon"></i></span>;
 }
