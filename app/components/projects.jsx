@@ -60,6 +60,26 @@ export default function Projects() {
          
 
 
+          <motion.div className="max-md:block max-md:m-2 flex rounded overflow-hidden shadow-glow m-3 p-3 dark:bg-transparent bg-cardbg border-cyan-300"
+          whileInView="visible"
+          initial="hidden"
+          viewport={{once:true, amount:0.15}}
+          variants={item}
+          >
+                <motion.img src='./marvel.png' className='max-h-max max-md:pl-2 pl-6 m-auto' alt="Marvel Characters application" width={300} whileHover={{scale:1.2}}/>
+                <div className="px-3 py-4">
+                  <div className="font-bold text-3xl mb-2 m-[2%] text-heading">Marvel Characters<a href="https://debaratid.github.io/marvel/" target="_blank">
+                  <i className="bi bi-arrow-up-right-circle"></i></a>
+                  </div>
+                  <p className='text-paragraph m-[2%]'>Jan 2025</p>
+                  <p className="text-paragraph font-mono text-base m-[2%]">
+                    Created a React Application using ThreeJS, Motion-Framer and incorporating data from Marvel API to display information based on characters.
+                  </p>
+                </div>
+          </motion.div>
+         
+
+
           <motion.div 
           whileInView="visible"
           initial="hidden"

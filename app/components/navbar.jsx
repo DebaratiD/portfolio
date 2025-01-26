@@ -34,7 +34,7 @@ export default function Navbar() {
 
     return (
     <>
-        <nav className="fixed grid w-[98%] bg-transparent drop-shadow-md" aria-label="Global">
+        <nav className="fixed grid w-[100%] bg-accent drop-shadow-md z-[3]" aria-label="Global">
             <div className='flex justify-between '>
                 <Image src="./debaratiDatta.png" alt='Debarati Datta' height={25} width={200} 
                 className='px-4 py-5 h-max  cursor-pointer'
