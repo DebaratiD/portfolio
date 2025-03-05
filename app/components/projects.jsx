@@ -9,7 +9,7 @@ export default function Projects() {
       opacity: 1,
       transition: {
         duration:1,
-        //staggerChildren:0.3
+        staggerChildren:1
       },
     },
     hidden: {
@@ -21,12 +21,11 @@ export default function Projects() {
   }
 
   const item = {
-    visible: { 
-      opacity: 1, 
+    visible: {  
       scale:1,
-      transition:{ ease:"easeInOut", duration:0.5}
+      transition:{ ease:"easeOut", duration:1.2}
     },
-    hidden: { opacity: 0, scale:0 },
+    hidden: { scale:0 },
   }
   return (
     <SectionWrapper id='projects'>
@@ -48,7 +47,7 @@ export default function Projects() {
           >
                 <motion.img src='./tailor.png' className='max-h-max max-md:pl-2 pl-6 m-auto' alt="StoryTailor application" width={300} whileHover={{scale:1.2}}/>
                 <div className="px-3 py-4">
-                  <div className="font-bold text-3xl mb-2 m-[2%] text-heading">StoryTailor <a href="https://github.com/DebaratiD/GoogleHackathon/tree/main/frontend" target="_blank">
+                  <div className="font-bold text-3xl mb-2 m-[2%] text-heading">StoryTailor <a href="https://google-frontend-gilt.vercel.app/" target="_blank">
                   <i className="bi bi-arrow-up-right-circle"></i></a>
                   </div>
                   <p className='text-paragraph m-[2%]'>May 2024</p>
@@ -68,7 +67,7 @@ export default function Projects() {
           >
                 <motion.img src='./marvel.png' className='max-h-max max-md:pl-2 pl-6 m-auto' alt="Marvel Characters application" width={300} whileHover={{scale:1.2}}/>
                 <div className="px-3 py-4">
-                  <div className="font-bold text-3xl mb-2 m-[2%] text-heading">Marvel Characters<a href="https://debaratid.github.io/marvel/" target="_blank">
+                  <div className="font-bold text-3xl mb-2 m-[2%] text-heading">Marvel Characters <a href="https://debaratid.github.io/marvel/" target="_blank">
                   <i className="bi bi-arrow-up-right-circle"></i></a>
                   </div>
                   <p className='text-paragraph m-[2%]'>Jan 2025</p>

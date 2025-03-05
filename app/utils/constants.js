@@ -4,13 +4,14 @@ export const skills=[
         "skills":[
             'JavaScript',
             'TypeScript',
-            'HTML',
-            'CSS',
+            'HTML5/CSS3',
             'React.js',
             'Angular.js',
             'Next.js',
             'Tailwind CSS',
-            'Chakra UI'
+            'Chakra UI',
+            'ShadCN',
+            'Contentful-CMS'
         ],
     },
     {
@@ -19,10 +20,11 @@ export const skills=[
             'FastAPI',
             'Gin',
             'GraphQL',
-            'NodeJS',
-            'ExpressJS',
+            'Node.js',
+            'Express.js',
             'MongoDB',
-            'SQL',
+            'MySQL',
+            'DynamoDB'
         ],
     },
     {
@@ -33,17 +35,20 @@ export const skills=[
             "Java",
             "Python",
             "C#",
-            "JavaScript"
+            "JavaScript",
+            'Go'
         ],
     },
     {
         "name":"Developer Tools",
         "skills":[
             'Git',
+            'Github Actions',
             'Docker',
             'Visual Studio Code',
             'Agile SDLC',
-            'Azure DevOps'
+            'Azure DevOps',
+            'AWS - EC2, S3, Lambda'
         ],
     },
     {
@@ -63,7 +68,8 @@ export const skills=[
             "OpenAI",
             "LangSAM",
             "LLava-Mistral",
-            "GeminiAI"
+            "GeminiAI",
+            "Stable Difussion"
         ]
     }
 ]

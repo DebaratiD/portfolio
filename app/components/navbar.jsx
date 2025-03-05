@@ -37,10 +37,8 @@ export default function Navbar() {
         <nav className="fixed grid w-[100%] bg-accent drop-shadow-md z-[3]" aria-label="Global">
             <div className='flex justify-between '>
                 <Image src="./debaratiDatta.png" alt='Debarati Datta' height={25} width={200} 
-                className='px-4 py-5 h-max  cursor-pointer'
-                onClick={() => {
-                    window.open('https://portfolio-qvc4nwxtt-debarati-dattas-projects.vercel.app')
-                  }}/>
+                className='px-4 py-5 h-max'
+                />
                 <div className='flex justify-between '>
                    <div className="md:flex max-md:hidden">
                         <motion.a href='#about'  className="menu-item" whileHover={{scale:1.1}} >

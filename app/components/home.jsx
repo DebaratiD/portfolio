@@ -71,7 +71,7 @@ export default function Home() {
           <motion.div 
           variants={variants}
           className="text-heading text-7xl py-2 ">
-            Hi! I am Debarati Datta.
+            Hi! I am Deb.
           </motion.div>
           <motion.div className='text-lg text-paragraph py-2 max-w-3xl' 
           variants={variants}>
